@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: blueviolet;
+}
+
+.Home {
+  display: flex;
+  justify-content: space-around;
+  height: 3em;
+  width: 100%;
+  align-items: center;
+}
+.Home-titulo {
+  font-size: 1.5em;
+}
