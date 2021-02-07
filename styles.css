@@ -2,16 +2,118 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: blueviolet;
 }
 
-.Home {
+.navbar {
+  background: blueviolet;
+  height: 3rem;
+  width: 100vw;
   display: flex;
-  justify-content: space-around;
-  height: 3em;
-  width: 100%;
+  justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #fff;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+  margin: 0;
 }
-.Home-titulo {
-  font-size: 1.5em;
+
+.navbar-nombre {
+  color: #fff;
+  font-size: 2rem;
+  padding: 0 1rem;
+  font-weight: bold;
+}
+
+.navbar-items {
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.navbar-items li {
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
+.navbar-items li a {
+  padding: 7px 13px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.navbar-items li:hover,
+li.active {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
+}
+
+.navbar-btn {
+  margin-right: 30px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+ul.show {
+  top: 46px;
+  height: 100%;
+}
+
+@media screen and (max-width: 952px) {
+  .navbar-nombre {
+    font-size: 30px;
+    padding-left: 35px;
+  }
+  .navbar-items li a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 858px) {
+  .menu {
+    height: 65px;
+  }
+  .navbar-btn {
+    display: inline-flex;
+  }
+  .navbar-items {
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 65px);
+    background: #414141;
+    top: -100vh;
+    text-align: center;
+    transition: all 0.4s;
+    flex-direction: column;
+  }
+  .navbar-items li {
+    margin: 30px 0 0 0;
+    line-height: 30px;
+  }
+  .navbar-items li:hover {
+    background: none;
+  }
+  .navbar-items li a {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .navbar-items li a:hover {
+    color: #e9183b;
+  }
+  .navbar-nombre {
+    font-size: 25px;
+    padding-left: 35px;
+  }
+}
+@media screen and (max-width: 858px) and (orientation: landscape) {
+  .navbar-items li {
+    margin: 5px 0 0 0;
+  }
+  .navbar-items {
+    overflow: scroll;
+    height: calc(100%-65px);
+  }
 }
