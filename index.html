@@ -11,25 +11,45 @@
 
 </head>
 <body>
-    <!-- navbar -->
-    <header >
-        <nav class="navbar">
-            <label class="navbar-nombre">Agustin-Frontend</label>
-            <ul class="navbar-items" id="otroModo">
-                <li class="navbar-items_active"><a>Home</a></li>
-                <li><a>Proyectos</a></li>
-                <li><a>Contactos</a></li>
-            </ul>
-            <span class="navbar-btn" onclick="showmenu()">
-                <i class="fas fa-bars"></i>
-            </span>
-        </nav>
-        
-        
-      
-        
-        
+    <!-- header -->
+    <input  type="checkbox" id="open" class="menu-checkbox">
+    <header class="header">
+        <div class="u-wrapper">
+            <div class="header-content">
+                <pre>Agustin Del valle
+Frontend-development
+                </pre>
+                <label for="open" class="menu-open"></label>
+                <nav class="menu">
+                    <div class="u-wrapper">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Proyectos
+                                </a>
+                            </li>  
+                            <li>
+                                <a href="#">
+                                    Contact
+                                </a>
+                            </li> 
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
+    <section class="hero">
+        <h1>Proyectos Personales</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quisquam aliquid distinctio pariatur veniam numquam at ratione nisi perferendis voluptatem!</p>
+        <button>CV</button>
+        <button>Github</button>
+    </section>
     <script src="main.js"></script>
 </body>
 </html>
