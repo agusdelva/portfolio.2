@@ -1,43 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html prefix="og: https://ogp.me/ns#">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agustin Del valle - Frontend Developer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <!-- ScrollReveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Bookmark">
+    <meta property="og:site_name" content="Bookmark">
+    <meta property="og:url" content="https://agusdelva.github.io/bookmark/">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://i.pinimg.com/originals/27/1e/0f/271e0fa0c697ebe82b7a5b3f6bb0feaf.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
 </head>
 <body>
-    <!-- header -->
     <input  type="checkbox" id="open" class="menu-checkbox">
     <header class="header">
         <div class="u-wrapper">
-            <div class="header-content">
-                <pre>Agustin Del valle
-Frontend-development
-                </pre>
+            <div class="header-content">   
+                <!-- <img src="./static/images/logo-bookmark-white.svg"> -->
+               <a href="#" class="header-logo"></a>
                 <label for="open" class="menu-open"></label>
                 <nav class="menu">
                     <div class="u-wrapper">
                         <ul>
                             <li>
-                                <a href="#">
-                                    Home
+                                <a href="#Features">
+                                    Features
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    Proyectos
+                                <a href="#questions">
+                                    Questions
                                 </a>
-                            </li>  
-                            <li>
-                                <a href="#">
+                            </li>  <li>
+                                <a href="#contact">
                                     Contact
                                 </a>
-                            </li> 
+                            </li>  <li>
+                                <a href="#">
+                                    Login
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -45,11 +50,210 @@ Frontend-development
         </div>
     </header>
     <section class="hero">
-        <h1>Proyectos Personales</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quisquam aliquid distinctio pariatur veniam numquam at ratione nisi perferendis voluptatem!</p>
-        <button>CV</button>
-        <button>Github</button>
+        <div class="u-wrapper">
+            <div class="hero-grid">
+                <div class="hero-imageContainer">
+                    <img class="hero-image" src="./images/illustration-hero.svg">
+                </div>
+                <div class="hero-content">
+                    <h1 class="u-h1">A Simple Bookmark Manager</h1>
+                    <p class="u-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quam molestiae doloremque facilis earum officiis nam, repellendus corporis neque ea porro odit dicta reprehenderit iusto. Iusto illum autem commodi quo.</p>
+                    <div class="hero-buttons">
+                        <button class="u-button">Get it on Chrome</button>
+                        <button class="u-button is-gray">Get it on Firefox</button>
+                    </div>           
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="features" id="Features">
+            <div class="u-wrapper">
+                <h2 class="u-h2">Features</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quis.</p>
+                <div class="tabs">
+                    <input type="radio" value="bookmarking" name="tabs" id="bookmarking" checked>
+                    <input type="radio" value="searching" name="tabs" id="searching">
+                    <input type="radio" value="sharing" name="tabs" id="sharing">
+                    <ul>         
+                        <li class="tabs-link">
+                            <label for="bookmarking">
+                                Simple Bookmarking
+                            </label>
+                        </li>
+                        <li class="tabs-link">
+                            <label for="searching">
+                            Speedy Searching
+                            </label>
+                        </li>
+                        <li class="tabs-link">
+                            <label for="sharing">
+                                Easy sharing
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="tabs-grid">
+                        <div class="tabs-content" id="tab-bookmarking">
+                            <img src="./images/illustration-features-tab-1.svg">
+                            <div>
+                                <h2 class="u-h2">Bookmark in one click</h2>
+                                <p class="u-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, magni?</p>
+                                <button class="u-button">More info</button>
+                            </div>
+                        </div>
+                        <div class="tabs-content" id="tab-searching">
+                            <img src="./images/illustration-features-tab-2.svg">
+                            <div>
+                                <h2 class="u-h2">Intelligent search</h2>
+                                <p class="u-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, magni?</p>
+                                <button class="u-button">More info</button>
+                            </div>
+                        </div>
+                        <div class="tabs-content" id="tab-sharing">
+                            <img src="./images/illustration-features-tab-3.svg">
+                            <div>
+                                <h2 class="u-h2">share your bookmarks</h2>
+                                <p class="u-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum accusamus facere maiores natus voluptatem quis sint ea hic quia cum.</p>
+                                <button class="u-button">More info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
-    <script src="main.js"></script>
+    <section class="download ">
+        <div class="u-wrapper">
+            <h2 class="u-h2">
+                Download the extension 
+            </h2>
+            <p class="u-p">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dolore.
+            </p>
+            <div class="download-grid">
+                <div class="download-item">
+                    <img src="./images/logo-chrome.svg">
+                    <h3 class="u-h3">
+                        Add to Chrome
+                    </h3>
+                    <p class="u-p">
+                        Minimun version 62
+                    </p>
+                    <button class="u-button is-fullwidth">
+                        add & install extension
+                    </button>
+                </div>
+                <div class="download-item">
+                    <img src="./images/logo-firefox.svg">
+                    <h3 class="u-h3">
+                        Add to firefox
+                    </h3>
+                    <p class="u-p">
+                        Minimun version 55
+                    </p>
+                    <button class="u-button is-fullwidth">
+                        add & install extension
+                    </button>
+                </div>
+                <div class="download-item">
+                    <img src="./images/logo-opera.svg">
+                    <h3 class="u-h3">
+                        Add to opera
+                    </h3>
+                    <p class="u-p">
+                        Minimun version 46
+                    </p>
+                    <button class="u-button is-fullwidth">
+                        add & install extension
+                    </button>
+                </div>
+            </div>                
+        </div>
+    </section>
+    <section class="questions" id="questions">
+        <div class="u-wrapper">
+            <h2 class="u-h2">
+                frequently asked questions
+            </h2>
+            <p class="u-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, magnam!
+            </p>
+            <div class="carrusel">
+                <div class="carrusel-item">
+                    <details class="carrusel-content">
+                        <summary class="carrusel-header">
+                            what is bookmark?
+                        </summary>
+                        <p class="u-p">
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, natus.
+                        </p>
+                    </details>
+                    <details class="carrusel-content">
+                        <summary class="carrusel-header">
+                            How can I request a new browser?
+                        </summary>
+                        <p class="u-p">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, reprehenderit eum? Atque et ea perspiciatis.
+                        </p>
+                    </details>
+                    <details class="carrusel-content">
+                        <summary class="carrusel-header">
+                            is there a mobile app?
+                        </summary>
+                        <p class="u-p">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis qui voluptatem tempore, quod magnam consectetur nulla perspiciatis recusandae animi accusamus.
+                        </p>
+                    </details>
+                    <details class="carrusel-content">
+                        <summary class="carrusel-header">
+                                what about other chromium browsers?
+                        </summary>
+                        <p class="u-p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam odit voluptatem nam.
+                        </p>
+                    </details>
+                </div>
+            </div>
+            <button class="u-button">More Info</button>
+        </div>
+    </section>
+    <section class="join">
+        <div class="u-wrapper">
+            <small>35555 + already joined</small>
+            <h4 class="u-h4">Stay up-to-date whiyh what</h4>
+            <form action="" class="form">
+                <input placeholder="Enter your email address" type="text" class="form-input">
+                <input type="submit" class="u-button is-red is-fullwidth" value="Contact Us">
+            </form>
+        </div>
+    </section>
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="u-wrapper">
+                <div class="footer-primary">
+                    <img src="./images/logo-bookmark-footer.svg">
+                    <ul  class="footer-menu">
+                        <li>
+                            <a href="#">
+                                Features
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="facebook"></a>
+                    <a href="#" class="twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
