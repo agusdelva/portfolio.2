@@ -102,6 +102,7 @@ body {
 .hero-title {
   /* font-size: 30px; */
   font-size: 2em;
+  margin-top: 0;
 }
 .hero-content-img {
   display: flex;
@@ -113,6 +114,9 @@ body {
 }
 .hero-buttons {
   padding-top: 1em;
+}
+.cohete {
+  height: 100px;
 }
 
 /* FEATURES */
