@@ -10,6 +10,7 @@
     <meta property="og:type" content="article">
     <meta property="og:image" content="https://imgur.com/yJ2oZ1T"> 
     <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>Agustin Del valle - Portfolio</title>
 </head>
 <body >
@@ -18,7 +19,7 @@
         <div class="u-wrapper">
             <div class="header__content">   
                 <!-- <img src="./static/images/logo-bookmark-white.svg"> -->
-               <a href="#" class="header__content--logo"></a>
+               
                 <label for="open" class="menu-open"></label>
                 <nav class="menu">
                     <div class="u-wrapper">
@@ -47,14 +48,17 @@
     <section class="hero">
         <div class="u-wrapper">
             <div class="hero-grid">
-                <div class="hero-imageContainer">
+                <!-- <div class="hero-imageContainer">
                     <img class="hero-image" src="./images/illustration-hero.svg">
-                </div>
+                </div> -->
                 <div class="hero-content">
-                    <h1 class="u-h1">Hola, soy Agustin</h1>
-                    <p class="u-p">Soy un front-end developer. Me gusta construir paginas y aplicaciones web, respetando los estandares de la web y con las mejores practicas</p>
+                    <div class="hero-content-img">
+                        <h1 class="hero-title">Hola, soy Agustin </h1>
+                        <img class="cohete" src="./images/icons8-cohete-100.png">
+                    </div>
+                    <p class="hero-parrafo">Un front-end developer, me gusta construir paginas y aplicaciones web, respetando los estandares de la web y con las mejores practicas.</p>
                     <div class="hero-buttons">
-                        <button class="u-button">Curriculum</button>
+                        <button  class="u-button"><a target="_blank" class="links" href="https://drive.google.com/file/d/1_adepFuheYwEBkVPdTfejYFYH89dMMKN/view?usp=sharing">Curriculum</a></button>
                     </div>           
                 </div>
             </div>
@@ -81,37 +85,40 @@
                         </li>
                         <li class="tabs-link">
                             <label class="tabs-label-3" for="sharing">
-                                Weather App
+                                Web responsive
                             </label>
                         </li>
                     </ul>
                     <div class="tabs-grid">
                         <div class="tabs-content" id="tab-bookmarking">
-                            <img class="tabs-img-1" src="./images/piedra-papel-tijera.png">
+                            <a target="_blank" href="https://agusdelva.github.io/rock-paper-scissors/"><img class="tabs-img-1" src="./images/piedra-papel-tijera.png"></a>      
                             <div>
                                 <h2 class="u-h2">Piedra Papel o Tijera</h2>
                                 <p class="u-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, magni?</p>
-                                <button class="u-button"><a class="links" href="https://github.com/agusdelva/rock-paper-scissors">Codigo</a></button>
+                                <button class="u-button"><a target="_blank" class="links" href="https://github.com/agusdelva/rock-paper-scissors">Codigo</a></button>
                             </div>
                         </div>
                         <div class="tabs-content" id="tab-searching">
-                            <img class="tabs-img-2" src="./images/dashboard.png">
+                            <a target="_blank" href="https://agusdelva.github.io/social-media-dashboard/"><img class="tabs-img-2" src="./images/dashboard.png"></a>
                             <div>
                                 <h2 class="u-h2">Social Media Dashboard</h2>
                                 <p class="u-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, magni?</p>
-                                <button class="u-button"><a class="links" href="https://agusdelva.github.io/social-media-dashboard/">Codigo</a></button>
+                                <button class="u-button"><a target="_blank" class="links" href="https://github.com/agusdelva/social-media-dashboard">Codigo</a></button>
                             </div>
                         </div>
                         <div class="tabs-content" id="tab-sharing">
-                            <img class="tabs-img-3" src="./images/web.png">
+                            <a target="_blank" href="https://agusdelva.github.io/pagina-responsive/">
+                                <img class="tabs-img-3" src="./images/web.png">
+                            </a>
                             <div>
-                                <h2 class="u-h2">Weather App</h2>
+                                <h2 class="u-h2">Web responsive</h2>
                                 <p class="u-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum accusamus facere maiores natus voluptatem quis sint ea hic quia cum.</p>
-                                <button class="u-button"><a class="links" href="https://agusdelva.github.io/weather-app/">Codigo</a></button>
+                                <button class="u-button"><a target="_blank" class="links" href="https://github.com/agusdelva/pagina-responsive">Codigo</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
     </section>
     <footer class="footer" id="contact">
@@ -119,10 +126,10 @@
             <div class="u-wrapper">
                 <div class="footer-social">
                     
-                    <a href="#" class="footer-icons"><img src="./images/icon-facebook.svg"></a>
-                    <a href="#" class="footer-icons"><img src="./images/icon-twitter.svg"></a>
-                    <a href="#" class="footer-icons"><img src="./images/icons8-github-48.png"></a>
-                    <a href="#" class="footer-icons-linkedin"><img src="./images/icons8-linkedin-50 (1).png"></a>
+                    <!-- <a href="#" class="footer-icons"><i class='bx bxl-twitter'></i></a> -->
+                    <a href="#" class="footer-icons"><img class="icons" src="./images/bxl-twitter (1).svg"></a>
+                    <a href="https://github.com/agusdelva" class="footer-icons"><img class="icons"  src="./images/bxl-github.svg"></a>
+                    <a href="https://www.linkedin.com/in/agustin-del-valle/" class="footer-icons"><img class="icons" src="./images/bxl-linkedin.svg"></a>
                 </div>
             </div>
         </div>
