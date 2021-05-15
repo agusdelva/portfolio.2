@@ -18,7 +18,6 @@
     <header class="header">
         <div class="u-wrapper">
             <div class="header__content">   
-                <!-- <img src="./static/images/logo-bookmark-white.svg"> -->
                
                 <label for="open" class="menu-open"></label>
                 <nav class="menu">
@@ -48,9 +47,6 @@
     <section class="hero">
         <div class="u-wrapper">
             <div class="hero-grid">
-                <!-- <div class="hero-imageContainer">
-                    <img class="hero-image" src="./images/illustration-hero.svg">
-                </div> -->
                 <div class="hero-content">
                     <div class="hero-content-img">
                         <h1 class="hero-title">Hola, soy Agustin </h1>
@@ -58,7 +54,7 @@
                     </div>
                     <p class="hero-parrafo">Un front-end developer, me gusta construir paginas y aplicaciones web, respetando los estandares de la web y con las mejores practicas.</p>
                     <div class="hero-buttons">
-                        <button  class="u-button"><a target="_blank" class="links" href="https://drive.google.com/file/d/1_adepFuheYwEBkVPdTfejYFYH89dMMKN/view?usp=sharing">Curriculum</a></button>
+                        <a class="u-button" target="_blank"  href="https://drive.google.com/file/d/1_adepFuheYwEBkVPdTfejYFYH89dMMKN/view?usp=sharing">Curriculum</a>
                     </div>           
                 </div>
             </div>
@@ -66,12 +62,13 @@
     </section> 
     <section class="features" id="Features">
             <div class="u-wrapper">
-                <h2 class="u-h2">Proyectos</h2>
+                <h2 class="proyectos-title">Proyectos</h2>
                 <p class="u-p">Los siguientes proyectos son practicas realizadas con el fin de mejorar como desarrollador.</p>
                 <div class="tabs">
                     <input class="tabs-input-1" type="radio" value="bookmarking" name="tabs" id="bookmarking" checked>
                     <input class="tabs-input-2" type="radio" value="searching" name="tabs" id="searching">
                     <input class="tabs-input-3" type="radio" value="sharing" name="tabs" id="sharing">
+                    <input class="tabs-input-4" type="radio" value="wheater" name="tabs" id="wheater">
                     <ul>         
                         <li class="tabs-link">
                             <label class="tabs-label-1" for="bookmarking">
@@ -88,6 +85,11 @@
                                 Web responsive
                             </label>
                         </li>
+                        <li class="tabs-link">
+                            <label class="tabs-label-4" for="wheater">
+                                Wheater app
+                            </label>
+                        </li>
                     </ul>
                     <div class="tabs-grid">
                         <div class="tabs-content" id="tab-bookmarking">
@@ -97,7 +99,7 @@
                             <div>
                                 <h2 class="u-h2">Piedra Papel o Tijera</h2>
                                 <p class="u-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, magni?</p>
-                                <button class="u-button"><a target="_blank" class="links" href="https://github.com/agusdelva/rock-paper-scissors">Codigo</a></button>
+                                <a target="_blank" class="u-button" href="https://github.com/agusdelva/rock-paper-scissors">Codigo</a>
                             </div>
                         </div>
                         <div class="tabs-content" id="tab-searching">
@@ -107,7 +109,7 @@
                             <div>
                                 <h2 class="u-h2">Social Media Dashboard</h2>
                                 <p class="u-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, magni?</p>
-                                <button class="u-button"><a target="_blank" class="links" href="https://github.com/agusdelva/social-media-dashboard">Codigo</a></button>
+                                <a target="_blank" class="u-button" href="https://github.com/agusdelva/social-media-dashboard">Codigo</a>
                             </div>
                         </div>
                         <div class="tabs-content" id="tab-sharing">
@@ -117,7 +119,17 @@
                             <div>
                                 <h2 class="u-h2">Web responsive</h2>
                                 <p class="u-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum accusamus facere maiores natus voluptatem quis sint ea hic quia cum.</p>
-                                <button class="u-button"><a target="_blank" class="links" href="https://github.com/agusdelva/pagina-responsive">Codigo</a></button>
+                                <a target="_blank" class="u-button" href="https://github.com/agusdelva/pagina-responsive">Codigo</a>
+                            </div>
+                        </div>
+                        <div class="tabs-content" id="tab-wheater">
+                            <a target="_blank" href="https://agusdelva.github.io/weather-app/">
+                                <img class="tabs-img-4" src="./images/whater-app.png">
+                            </a>
+                            <div>
+                                <h2 class="u-h2">Wheater app</h2>
+                                <p class="u-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum accusamus facere maiores natus voluptatem quis sint ea hic quia cum.</p>
+                                <a class="u-button" target="_blank" href="https://github.com/agusdelva/weather-app">Codigo</a>
                             </div>
                         </div>
                     </div>
