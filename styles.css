@@ -114,10 +114,11 @@ body {
 }
 
 .hero-parrafo {
+  padding-top: 1em;
   font-size: 1em;
 }
 .hero-buttons {
-  padding-top: 1em;
+  padding-top: 2em;
 }
 .cohete {
   height: 100px;
@@ -127,7 +128,8 @@ body {
 
 .features {
   text-align: center;
-  padding: 1em 0;
+  padding-top: 0;
+  padding-bottom: 2em;
 }
 .features .u-wrapper > .u-p {
   max-width: 580px;
@@ -148,6 +150,7 @@ body {
 [class^="tabs-img-"] {
   max-width: 100%;
   margin-bottom: 1.5em;
+  border-radius: 10px;
 }
 .tabs-grid {
   margin-top: 4em;
@@ -222,13 +225,13 @@ body {
 }
 
 .footer-icons {
-  width: 40px;
-  height: 40px;
   display: inline-block;
   padding: 10px;
 }
 
 .icons {
+  display: inline-block;
+  cursor: pointer;
   height: 50px;
   width: 50px;
 }
@@ -286,13 +289,6 @@ ul {
   background-color: rgb(97, 95, 155);
   color: #f2f2f2;
 }
-/* .u-button:first-of-type {
-  margin: 0;
-}
-
-.u-button.is-fullwidth {
-  width: 100%;
-} */
 
 /* MEDIAS QUERYS */
 
@@ -381,6 +377,11 @@ ul {
     border-top: none;
     text-align: left;
   }
+  .u-button {
+    display: block;
+    padding: 16px 10px;
+    color: rgb(97, 95, 155);
+  }
   .tabs ul {
     display: flex;
     justify-content: center;
@@ -401,7 +402,7 @@ ul {
 
   [class^="tabs-img-"] {
     width: 80%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     cursor: pointer;
     margin: 0;
   }
@@ -425,10 +426,12 @@ ul {
   }
 
   .icons {
+    cursor: pointer;
     width: 75px;
     height: 75px;
   }
   .footer-icons {
     padding: 80px;
+    cursor: initial;
   }
 }
