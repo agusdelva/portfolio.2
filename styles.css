@@ -5,7 +5,6 @@
   --veryDarkBlue: #252b46;
 }
 body {
-  font-family: "Rubik", sans-serif;
   margin: 0;
   font-size: 18px;
   width: 100%;
@@ -104,18 +103,18 @@ body {
   max-width: 100%;
 }
 .hero-title {
-  /* font-size: 30px; */
-  font-size: 2em;
+  font-size: 2.5em;
+  font-family: "Nunito", sans-serif;
   margin-top: 0;
 }
 .hero-content-img {
   display: flex;
-  /* width: 800px; */
 }
 
 .hero-parrafo {
   padding-top: 2em;
-  font-size: 1em;
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
 }
 .hero-buttons {
   padding-top: 3em;
@@ -159,6 +158,8 @@ body {
   padding: 1em 0;
   display: block;
   position: relative;
+  font-size: 1em;
+  letter-spacing: 1px;
 }
 .tabs [class^="tabs-label-"]:after {
   display: none;
@@ -252,14 +253,14 @@ ul {
 .u-h2,
 .u-h4 {
   font-size: 2em;
-  font-weight: 500;
 }
 .u-h2 {
   font-size: 1.5em;
+  font-family: "Nunito", sans-serif;
 }
 .proyectos-title {
   font-size: 2em;
-  font-weight: 500;
+  font-family: "Nunito", sans-serif;
   padding-top: 3em;
   margin: 0;
 }
@@ -268,9 +269,10 @@ ul {
   margin-top: 0.5em;
 }
 .u-p {
-  color: var(--veryDarkBlue);
+  /* color: var(--veryDarkBlue); */
   line-height: 1.8;
-  font-size: 0.9em;
+  font-size: 1.1em;
+  font-family: "Roboto", sans-serif;
 }
 .u-button {
   color: rgb(97, 95, 155);
