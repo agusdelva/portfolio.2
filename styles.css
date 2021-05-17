@@ -260,7 +260,8 @@ ul {
 .proyectos-title {
   font-size: 2em;
   font-weight: 500;
-  margin-top: 3em;
+  /* margin-top: 3em; */
+  padding-top: 3em;
 }
 .u-h4 {
   font-size: 1.3em;
