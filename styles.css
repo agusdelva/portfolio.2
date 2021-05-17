@@ -114,11 +114,11 @@ body {
 }
 
 .hero-parrafo {
-  padding-top: 1em;
+  padding-top: 2em;
   font-size: 1em;
 }
 .hero-buttons {
-  padding-top: 2em;
+  padding-top: 3em;
 }
 .cohete {
   height: 100px;
@@ -260,8 +260,8 @@ ul {
 .proyectos-title {
   font-size: 2em;
   font-weight: 500;
-  /* margin-top: 3em; */
   padding-top: 3em;
+  margin: 0;
 }
 .u-h4 {
   font-size: 1.3em;
