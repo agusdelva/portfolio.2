@@ -1,8 +1,5 @@
 :root {
-  --softBlue: #5368df;
-  --softRed: #fa5757;
   --grayishBlue: #9194a1;
-  --veryDarkBlue: #252b46;
 }
 body {
   margin: 0;
@@ -46,8 +43,8 @@ body {
   will-change: transform;
 }
 .menu ul {
-  padding: 0;
-  list-style: none;
+  /* padding: 0; */
+  /* list-style: none; */
 }
 .menu li {
   border-top: 1px solid var(--grayishBlue);
@@ -97,7 +94,7 @@ body {
 
 .hero {
   text-align: center;
-  padding: 4em 0;
+  padding: 2em 0;
 }
 .hero-image {
   max-width: 100%;
@@ -112,7 +109,7 @@ body {
 }
 
 .hero-parrafo {
-  padding-top: 2em;
+  margin-top: 0;
   font-size: 1.5em;
   font-family: "Roboto", sans-serif;
 }
@@ -137,7 +134,6 @@ body {
 
 .tabs {
   margin-top: 2em;
-  border-top: 1px solid var(--grayishBlue);
 }
 .tabs-link {
   border-bottom: 1px solid var(--grayishBlue);
@@ -223,10 +219,6 @@ body {
 .footer-icons {
   color: #fff;
   text-decoration: none;
-}
-
-.footer-icons {
-  display: inline-block;
   padding: 10px;
 }
 
@@ -241,7 +233,6 @@ body {
 ul {
   padding: 0;
   list-style: none;
-  margin: 0;
 }
 
 .u-wrapper {
@@ -249,13 +240,9 @@ ul {
   margin: auto;
   padding: 0 1em;
 }
-.u-h1,
-.u-h2,
-.u-h4 {
-  font-size: 2em;
-}
+
 .u-h2 {
-  font-size: 1.5em;
+  font-size: 2em;
   font-family: "Nunito", sans-serif;
 }
 .proyectos-title {
@@ -264,12 +251,7 @@ ul {
   padding-top: 3em;
   margin: 0;
 }
-.u-h4 {
-  font-size: 1.3em;
-  margin-top: 0.5em;
-}
 .u-p {
-  /* color: var(--veryDarkBlue); */
   line-height: 1.8;
   font-size: 1.1em;
   font-family: "Roboto", sans-serif;
@@ -293,6 +275,17 @@ ul {
   color: #f2f2f2;
 }
 
+@media screen and (min-width: 487px) {
+  .hero {
+    text-align: left;
+  }
+  .hero-title {
+    margin-top: 0.3em;
+  }
+  .hero-parrafo {
+    padding-top: 1em;
+  }
+}
 /* MEDIAS QUERYS */
 
 @media screen and (min-width: 1024px) {
@@ -321,14 +314,12 @@ ul {
     margin-top: 15px;
   }
   .hero-parrafo {
+    padding-top: 1em;
     font-size: 2em;
   }
-  /* .links {
-    font-size: 1.5em;
-  } */
-}
 
-@media screen and (min-width: 1024px) {
+  /*menu*/
+
   .menu {
     visibility: visible;
     opacity: 1;
@@ -367,9 +358,9 @@ ul {
   .menu ul {
     display: flex;
   }
-}
 
-@media screen and (min-width: 1024px) {
+  /*globales*/
+
   .u-h2 {
     font-size: 2em;
   }
@@ -381,6 +372,7 @@ ul {
     text-align: left;
   }
   .u-button {
+    font-size: 1.5em;
     display: block;
     padding: 16px 10px;
     color: rgb(97, 95, 155);
@@ -409,23 +401,15 @@ ul {
     cursor: pointer;
     margin: 0;
   }
-}
 
-@media screen and (min-width: 1024px) {
+  /*footer*/
+
   .footer {
     padding: 0em;
   }
   .footer-content {
     display: flex;
     justify-content: flex-start;
-  }
-  .footer-menu {
-    display: flex;
-    margin: 0;
-  }
-  .footer-primary {
-    display: flex;
-    align-items: center;
   }
 
   .icons {
@@ -436,5 +420,6 @@ ul {
   .footer-icons {
     padding: 80px;
     cursor: initial;
+    display: inline-block;
   }
 }
