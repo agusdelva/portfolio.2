@@ -206,6 +206,11 @@ body {
   display: flex;
 }
 
+.link {
+  text-decoration: none;
+  color: black;
+}
+
 /* FOOTER */
 
 .footer {
