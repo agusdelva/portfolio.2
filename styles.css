@@ -138,6 +138,7 @@ body {
   display: inline-flex;
   cursor: pointer;
   background: url("../images/icon-hamburger.svg") no-repeat center;
+  padding-left: 20px;
 }
 .menu-checkbox {
   display: none;
@@ -355,9 +356,6 @@ ul {
   .hero {
     text-align: center;
   }
-  /* .hero-content-img {
-    position: relative;
-  }*/
   .cohete {
     margin-top: 35px;
   }
@@ -492,7 +490,6 @@ ul {
 
   [class^="tabs-img-"] {
     width: 80%;
-    /* border-radius: 10px; */
     cursor: pointer;
     margin: 0;
   }
